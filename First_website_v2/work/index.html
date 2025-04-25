@@ -1,0 +1,85 @@
+<!--------f-----------
+    First Website
+    Name: Katsia Ilunga
+    Date: 24/04/2025
+    Description: Using HTML5, CSS, and JavaScript I created a cosmetic chemistry website for a hypothetical client, 
+                 and upload it to the World Wide Web. 
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Work - Kim's Kosmetics</title>
+        <link rel="stylesheet" type="text/css" href="../First_website.css">
+        <script src="../First_website.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <a id="homeButton" href="../index.html">
+                <img id="logoSmall" src="../images/logo_top.png" alt="logo">
+            </a> 
+
+            <button id="menuButton">
+                <img id="menu" src="../images/menu-off.svg" alt="Menu">
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a href="../about/index.html" class="nav-buttons">About</a></li>
+                    <li><a href="../work/index.html" class="nav-buttons">Work</a></li>
+                    <li><a href="../contacts/index.html" class="nav-buttons">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="content" class="games">
+            <section>
+                <h1>My Products</h1>
+                <h4>A Cosmetic Chemist</h4>
+
+                <div class="games">
+                    <div id="sunscreen">
+                        <img src="../images/sunscreen.jpg" alt="Sunscreen" class="gameImage">
+
+                        <div class="details">
+                            <h2>Sunscreen</h2>
+                            <p>
+                               This is a 50spf mineral sunscreen. It is the #1 bestseller product in store.
+                            </p>
+
+                            <button id="playDash" class="buttons">Press Now</button>
+                        </div>
+                    </div>
+
+                    <div id="balm">
+                        <img src="../images/balm.png" alt="Balm" class="gameImage">
+                        
+                        <div class="details">
+                            <h2>Balm</h2>
+                            <p>
+                                This is a very moisturizing balm for all kinds of skin types and good also for sensitive skin.
+                            </p>
+
+                            <button id="playSlingshot" class="buttons">Press Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="../about/index.html" class="footer-buttons">About</a></li>
+                <li><a href="../work/index.html" class="footer-buttons">Work</a></li>
+                <li><a href="../contacts/index.html" class="footer-buttons">Contact</a></li>
+            </ul>
+            <label id="copyright">
+               Kim's Kosmetics by Katsia Ilunga 
+            </label>
+        </footer>
+            
+    </body>
+
+</html>

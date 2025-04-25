@@ -1,0 +1,371 @@
+/**
+    First Website
+    Name: Katsia Ilunga
+    Date: 24/04/2025
+    Description: Using HTML5, CSS, and JavaScript I created a cosmetic chemistry website for a hypothetical client, 
+                 and upload it to the World Wide Web. Uses elements
+                 names contained within arrow brackets <> in HTML 
+                 example: <body> <div> 
+**/
+
+body {
+
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f6b3fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px 100px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+header ul li {
+    margin: 0 20px;
+}
+header ul li a {
+    font-weight: bold;
+    text-decoration: none;
+}
+header nav {
+    display: flex;
+}
+
+/* main content */
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 50px;
+}
+main section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+main section p {
+    font-size: 16px;
+    max-width: 300px;
+    text-align: center;
+}
+main section h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+}
+main section h4 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+}
+form div {
+    display: flex;
+    flex-flow: column;
+    margin: 10px auto;
+    text-align: center;
+    width: 500px;
+}
+form label {
+    margin-bottom: 5px;
+}
+form input, form textarea {
+    border: 3px solid #000000;
+    padding: 5px;
+}
+form .btn {
+  width: auto;
+}
+
+/* footer */
+footer {
+    clear: both;
+    position: static;
+    bottom: 0;
+    z-index: 100;
+    font-size: 14px;
+    color: #444444;
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 10px auto;
+    padding: 0;
+}
+footer ul li {
+    margin: 0 20px;
+}
+footer ul li a {
+    color: #444444;
+}
+footer ul li a:hover {
+    color: #0050EA;
+}
+footer label {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+
+
+/* ids */
+/* names start with number sign # in HTML */
+/* example: #logo #menu */
+
+#homeButton {
+    display: flex;
+    height: 100%;
+}
+
+#menuButton {
+    display: none; /* off unless in narrow screen view */
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    border: 3px solid #0050EA;
+    background-color: #FFFFFF;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+#menuButton:hover {
+    background-color: #0050EA;
+}
+
+#logoSmall {
+    width: auto;
+    height: 100%;
+}
+
+#logoLarge {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+#blueBirdSmall {
+    height: 120px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.about-content h2 {
+    color: black;
+    margin-top: 2rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+}
+
+.about-content ul {
+    margin-left: 1.5rem;
+}
+
+.about-content li {
+    margin-bottom: 0.8rem;
+}
+#content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#content.form section {
+    width: 100%;
+}
+
+#content.games {
+    justify-content: center;
+}
+.error {
+    color: #ff0000;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: none;
+  }
+  
+  input:invalid, textarea:invalid {
+    border-color: #ff0000;
+  }
+#copyright {
+  margin: 20px auto;
+}
+
+/* classes */
+/* names start with dot sign . in HTML */
+/* example: .buttons .nav */
+.buttons {
+    border-radius: 25px;
+    border: 3px solid #0050EA;
+    font-size: 14px;
+    color: #000000;
+    padding: 10px 25px;
+    background-color: #FFFFFF;
+}
+.buttons:hover {
+    background-color: #0050EA;
+    color: #FFFFFF;
+}
+
+.nav-buttons {
+    color: #000000;
+}
+.nav-buttons:hover {
+    color: #0050EA;
+    border-bottom: 2px solid #0050EA;
+}
+
+.birds {
+    width: 200px;
+    display: flex;
+    justify-content: end;
+}
+
+.games {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.games div {
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.games button {
+    margin: 20px auto;
+}
+.games div p {
+    margin: auto;
+}
+.games .details {
+    margin: 30px;
+}
+
+/* media queries */
+/* specific styling based on page width */
+
+/*  min width limit */
+@media (min-width: 700px) {
+    #blueBirdSmall {
+        height: 150px;
+    }
+  
+    main section p {
+        max-width: 500px;
+    }
+
+    #content.games p {
+        max-width: 300px;
+    }
+}
+
+/* max width limit */
+@media (max-width: 900px) {
+    .games {
+        flex-flow: column;
+    }
+}
+@media (max-width: 550px) {
+    /* elements */
+    header {
+        flex-flow: column;
+        align-items: center;
+        height: auto;
+        padding: 0;
+    }
+    header nav {
+        width: 100%;
+        height: 100%;
+    }
+    header nav ul {
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+        background-color: #000000;
+    }
+    header nav ul li {
+        display: flex;
+        margin: 10px 0;
+    }
+    
+    main {
+        flex-flow: column;
+        margin: 30px auto;
+    }
+
+    form div {
+        width: 300px;
+    }
+
+    /* ids */
+    #homeButton {
+        height: 70px;
+        margin: 20px 0;
+    }
+
+    #menuButton {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin: 30px 20px;
+    }
+
+   
+
+    #content.games {
+        justify-content: space-between;
+    }
+
+    /* classes */
+    .nav-buttons {
+        border-radius: 25px;
+        border: 3px solid #0050EA;
+        font-size: 14px;
+        color: #000000;
+        padding: 10px 25px;
+        background-color: #FFFFFF;
+    }
+    .nav-buttons:hover {
+        background-color: #0050EA;
+        color: #FFFFFF;
+        border: 3px solid #0050EA;
+    }
+
+    .birds {
+        width: auto;
+        margin: auto 0 30px;
+    }
+}
